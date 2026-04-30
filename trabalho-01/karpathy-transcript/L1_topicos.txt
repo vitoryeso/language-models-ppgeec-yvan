@@ -1,0 +1,91 @@
+L1 — 9 Tópicos com referências temporais
+Base: vitor_karpathy_30min.txt (PT-BR) × transcript_7xTGNNLPyMI.txt (Karpathy, EN)
+Formato: [script MM:SS] vs [▶ karpathy H:MM:SS]
+
+
+════════════════════════════════════════════════════════════
+🎬 VÍDEO 1 · BIG PICTURE
+════════════════════════════════════════════════════════════
+
+T1 · Pipeline end-to-end: pretrain → SFT → RL
+    script   [00:00 – 01:00]
+    karpathy [00:00 – 08:00]   abertura + motivação das três fases
+
+T2 · Dados & tokenização: internet → FineWeb → BPE
+    script   [01:00 – 02:00]
+    karpathy [08:00 – 20:00]   FineWeb 15T tokens, pipeline de dados
+             [20:00 – 27:00]   tokenização byte-pair
+
+T3 · Transformer como próximo-token + base model
+    script   [03:00 – 08:00]
+    karpathy [27:00 – 42:00]   input/output, attention, forward pass
+             [42:00 – 50:00]   inferência, GPT-2 reprodução (~$672)
+             [49:59]           "base model = compressão lossy da internet" (tasks: masking)
+             [50:00 – 60:12]   Llama 3.1 405B base, transição p/ assistente
+
+
+════════════════════════════════════════════════════════════
+🔬 VÍDEO 2 · TECHNICAL DEEP DIVE
+════════════════════════════════════════════════════════════
+
+T4 · SFT: InstructGPT, tokens de conversa, assistente = simulação de labeler
+    script   [09:00 – 11:00]
+    karpathy [1:00:12 – 1:04:16]   SFT = mesmo algoritmo, dataset diferente
+             [1:05:17 – 1:08:21]   im_start / im_sep / protocolo de conversa
+             [1:10:23 – 1:11:23]   InstructGPT, labelers, labeling instructions
+             [1:15:25]              UltraChat / datasets sintéticos
+             [1:16:27 – 1:19:29]   "você fala com simulação estatística de labeler"
+
+T5 · Compute por token & chain-of-thought mecânico
+    script   [16:00 – 17:00]
+    karpathy [1:46:59 – 1:52:07]   dois formatos de resposta (bom × ruim)
+             [1:54:10 – 1:56:11]   demo: forçar resposta em 1 token falha
+             [1:58:13]              "modelos precisam de tokens pra pensar"
+
+T6 · RL em domínios verificáveis: DeepSeek-R1, emergência de CoT, AlphaGo
+    script   [20:00 – 24:00]
+    karpathy [2:09:24 – 2:17:37]   motivação (analogia escola)
+             [2:20:39 – 2:25:43]   loop RL: N gerações → reforço do correto
+             [2:28:46 – 2:31:50]   DeepSeek-R1, CoT emergente, backtracking
+             [2:32:50 – 2:37:55]   GPT-4o × R1 · thinking vs apresentação
+             [2:42:01 – 2:47:09]   AlphaGo, Move 37, paralelo c/ LLMs
+
+
+════════════════════════════════════════════════════════════
+🪞 VÍDEO 3 · CRITICAL REFLECTION
+════════════════════════════════════════════════════════════
+
+T7 · Psicologia do LLM: alucinação + memória paramétrica × context + Swiss cheese
+    script   [12:00 – 13:00, 15:00, 19:00]
+    karpathy [1:20:31 – 1:22:35]   alucinação (Falcon 7B, Orson Kovats)
+             [1:24:36 – 1:30:41]   mitigação Llama 3 (mapear fronteira do saber)
+             [1:31:43 – 1:36:49]   tool use / web search como workaround
+             [1:38:50 – 1:40:51]   memória nos parâmetros × no context window
+             [3:08:28]              "Swiss cheese model" das capacidades
+
+T8 · Deficits estruturais: contagem, spelling, 9.11 vs 9.9
+    script   [18:00 – 19:00]
+    karpathy [1:58:13 – 2:01:16]   contar pontos, spelling de "ubiquitous"
+             [2:03:20]              "quantos Rs em strawberry?"
+             [2:00:15]              saída = use code interpreter
+             [2:05:22 – 2:06:22]   9.11 × 9.9, ativação de neurônios bíblicos
+
+T9 · RLHF não é RL: reward hacking, adversarial, limite do não-verificável
+    script   [25:00 – 28:00]
+    karpathy [2:48:10 – 2:50:12]   domínios verificáveis × não-verificáveis
+             [2:51:12 – 2:53:13]   reward model · ranqueamento relativo
+             [2:55:00 – 3:00:00]   discriminator-generator gap (upside do RLHF)
+             [3:00:00 – 3:08:00]   "RLHF is not RL" · reward hacking · "the the the"
+             [3:08:28 – fim]        síntese: Swiss cheese, trate LLM como ferramenta
+
+
+════════════════════════════════════════════════════════════
+NOTAS
+════════════════════════════════════════════════════════════
+
+- Timestamps do Karpathy vêm do arquivo annotated (já ancorados em claims reais).
+- Onde marcado com intervalo (ex: "1:00:12 – 1:04:16"), é o span onde o
+  Karpathy trata o tópico — não um único marcador pontual.
+- T6 e T9 são o par crítico: ambos são RL, mas T6 é "RL que funciona"
+  (verificável) e T9 é "RL que falha" (RLHF). Essa dicotomia é o coração
+  da reflexão do Karpathy e o melhor gancho pro Vídeo 3.

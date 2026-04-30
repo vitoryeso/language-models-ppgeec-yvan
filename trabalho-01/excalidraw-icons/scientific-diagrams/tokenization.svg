@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" width="520" height="200">
+  <rect width="520" height="200" rx="12" fill="#F8F9FA" stroke="#DEE2E6" stroke-width="2"/>
+  <text x="260" y="28" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#212529">Tokenization</text>
+  
+  <!-- Input text -->
+  <rect x="20" y="50" width="180" height="40" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  <text x="110" y="75" text-anchor="middle" font-family="monospace" font-size="14" fill="#1976D2">"Hello, world!"</text>
+  
+  <!-- Arrow -->
+  <line x1="205" y1="70" x2="235" y2="70" stroke="#555" stroke-width="2.5"/>
+  <polygon points="235,65 245,70 235,75" fill="#555"/>
+  <text x="225" y="62" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">tokenize</text>
+
+  <!-- Tokens -->
+  <g font-family="monospace" font-size="13">
+    <rect x="252" y="50" width="52" height="38" rx="6" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+    <text x="278" y="74" text-anchor="middle" fill="#388E3C">"Hello"</text>
+    
+    <rect x="312" y="50" width="28" height="38" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+    <text x="326" y="74" text-anchor="middle" fill="#E65100">","</text>
+    
+    <rect x="348" y="50" width="28" height="38" rx="6" fill="#E8EAF6" stroke="#3949AB" stroke-width="2"/>
+    <text x="362" y="74" text-anchor="middle" fill="#3949AB">"▁"</text>
+    
+    <rect x="384" y="50" width="56" height="38" rx="6" fill="#FCE4EC" stroke="#C2185B" stroke-width="2"/>
+    <text x="412" y="74" text-anchor="middle" fill="#C2185B">"world"</text>
+    
+    <rect x="448" y="50" width="26" height="38" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+    <text x="461" y="74" text-anchor="middle" fill="#7B1FA2">"!"</text>
+  </g>
+
+  <!-- Token IDs -->
+  <text x="260" y="115" font-family="Arial" font-size="12" fill="#555" font-weight="bold">Token IDs:</text>
+  <g font-family="monospace" font-size="13" fill="#333">
+    <rect x="252" y="122" width="52" height="28" rx="4" fill="#EEEEEE" stroke="#9E9E9E" stroke-width="1.5"/>
+    <text x="278" y="141" text-anchor="middle">15496</text>
+    
+    <rect x="312" y="122" width="28" height="28" rx="4" fill="#EEEEEE" stroke="#9E9E9E" stroke-width="1.5"/>
+    <text x="326" y="141" text-anchor="middle">11</text>
+    
+    <rect x="348" y="122" width="28" height="28" rx="4" fill="#EEEEEE" stroke="#9E9E9E" stroke-width="1.5"/>
+    <text x="362" y="141" text-anchor="middle">995</text>
+    
+    <rect x="384" y="122" width="56" height="28" rx="4" fill="#EEEEEE" stroke="#9E9E9E" stroke-width="1.5"/>
+    <text x="412" y="141" text-anchor="middle">1917</text>
+    
+    <rect x="448" y="122" width="26" height="28" rx="4" fill="#EEEEEE" stroke="#9E9E9E" stroke-width="1.5"/>
+    <text x="461" y="141" text-anchor="middle">0</text>
+  </g>
+
+  <!-- Embedding label -->
+  <text x="260" y="175" font-family="Arial" font-size="11" fill="#888">Each token maps to a high-dimensional embedding vector</text>
+</svg>

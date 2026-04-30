@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <style>
+    .box { rx: 8; stroke-width: 2; }
+    .txt { font-family: monospace; font-size: 10px; text-anchor: middle; fill: white; }
+    .ltxt { font-family: monospace; font-size: 9px; text-anchor: middle; fill: #555; }
+  </style>
+  <text x="200" y="20" class="ltxt" font-size="13" font-weight="bold" fill="#333">Observability Stack</text>
+  <!-- Three pillars -->
+  <rect x="20" y="40" width="110" height="70" class="box" fill="#4A90D9" stroke="#2C5F8A"/>
+  <text x="75" y="65" class="txt" font-weight="bold">Logs</text>
+  <text x="75" y="80" class="txt" font-size="8">Structured events</text>
+  <text x="75" y="93" class="txt" font-size="8">Error tracking</text>
+  <rect x="145" y="40" width="110" height="70" class="box" fill="#E8A838" stroke="#B07A20"/>
+  <text x="200" y="65" class="txt" font-weight="bold">Metrics</text>
+  <text x="200" y="80" class="txt" font-size="8">Latency P50/P99</text>
+  <text x="200" y="93" class="txt" font-size="8">Throughput QPS</text>
+  <rect x="270" y="40" width="110" height="70" class="box" fill="#6BB86B" stroke="#3D7A3D"/>
+  <text x="325" y="65" class="txt" font-weight="bold">Traces</text>
+  <text x="325" y="80" class="txt" font-size="8">Request flow</text>
+  <text x="325" y="93" class="txt" font-size="8">Span analysis</text>
+  <!-- Dashboard -->
+  <rect x="100" y="135" width="200" height="50" class="box" fill="#9C27B0" stroke="#6A1B9A"/>
+  <text x="200" y="158" class="txt" font-weight="bold">Dashboard / Alerts</text>
+  <text x="200" y="173" class="txt" font-size="8">Grafana / Prometheus / ELK</text>
+</svg>

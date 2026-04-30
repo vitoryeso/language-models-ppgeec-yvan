@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" width="520" height="180">
+  <style>
+    .step { rx: 10; stroke-width: 2; }
+    .txt { font-family: monospace; font-size: 12px; fill: white; text-anchor: middle; }
+    .label { font-family: monospace; font-size: 10px; fill: #555; text-anchor: middle; }
+    .arrow { stroke: #666; stroke-width: 2.5; fill: none; marker-end: url(#ah); }
+  </style>
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  <!-- Extract -->
+  <rect x="20" y="40" width="120" height="60" class="step" fill="#4A90D9" stroke="#2C5F8A"/>
+  <text x="80" y="65" class="txt" font-size="16" font-weight="bold">Extract</text>
+  <text x="80" y="82" class="txt" font-size="10">APIs, DBs, Files</text>
+  <!-- Sources -->
+  <rect x="15" y="115" width="40" height="25" rx="4" fill="#E8F0FE" stroke="#4A90D9" stroke-width="1"/>
+  <text x="35" y="132" class="label">DB</text>
+  <rect x="60" y="115" width="40" height="25" rx="4" fill="#E8F0FE" stroke="#4A90D9" stroke-width="1"/>
+  <text x="80" y="132" class="label">API</text>
+  <rect x="105" y="115" width="40" height="25" rx="4" fill="#E8F0FE" stroke="#4A90D9" stroke-width="1"/>
+  <text x="125" y="132" class="label">Web</text>
+  <!-- Arrow -->
+  <line x1="145" y1="70" x2="185" y2="70" class="arrow"/>
+  <!-- Transform -->
+  <rect x="190" y="40" width="130" height="60" class="step" fill="#E8A838" stroke="#B07A20"/>
+  <text x="255" y="65" class="txt" font-size="16" font-weight="bold">Transform</text>
+  <text x="255" y="82" class="txt" font-size="10">Clean, Filter, Map</text>
+  <!-- Arrow -->
+  <line x1="325" y1="70" x2="365" y2="70" class="arrow"/>
+  <!-- Load -->
+  <rect x="370" y="40" width="130" height="60" class="step" fill="#6BB86B" stroke="#3D7A3D"/>
+  <text x="435" y="65" class="txt" font-size="16" font-weight="bold">Load</text>
+  <text x="435" y="82" class="txt" font-size="10">Data Warehouse</text>
+  <!-- Target -->
+  <rect x="395" y="115" width="80" height="25" rx="4" fill="#E8F5E9" stroke="#6BB86B" stroke-width="1"/>
+  <text x="435" y="132" class="label">Storage</text>
+</svg>

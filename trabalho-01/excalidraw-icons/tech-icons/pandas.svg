@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="16" fill="#150458"/>
+  <!-- Pandas bars logo -->
+  <rect x="32" y="18" width="12" height="32" rx="4" fill="#E70488"/>
+  <rect x="56" y="18" width="12" height="32" rx="4" fill="#E70488"/>
+  <rect x="32" y="54" width="12" height="28" rx="4" fill="white"/>
+  <rect x="56" y="54" width="12" height="28" rx="4" fill="white"/>
+  <rect x="44" y="36" width="12" height="28" rx="4" fill="#E70488"/>
+  <text x="50" y="95" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="white">Pandas</text>
+</svg>

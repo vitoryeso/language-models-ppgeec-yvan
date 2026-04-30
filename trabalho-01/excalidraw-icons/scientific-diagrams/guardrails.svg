@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" width="560" height="200">
+  <rect width="560" height="200" rx="12" fill="#F8F9FA" stroke="#DEE2E6" stroke-width="2"/>
+  <text x="280" y="28" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#212529">Guardrails / Safety Filters</text>
+
+  <!-- Input -->
+  <rect x="15" y="65" width="90" height="70" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  <text x="60" y="88" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#1565C0">User Input</text>
+  <text x="60" y="104" text-anchor="middle" font-family="Arial" font-size="20">✍️</text>
+  <text x="60" y="125" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">raw prompt</text>
+
+  <!-- Arrow -->
+  <line x1="108" y1="100" x2="128" y2="100" stroke="#555" stroke-width="2.5"/>
+  <polygon points="128,94 140,100 128,106" fill="#555"/>
+
+  <!-- Safety layer -->
+  <rect x="145" y="45" width="200" height="110" rx="10" fill="#FFF8E1" stroke="#F57F17" stroke-width="2.5"/>
+  <text x="245" y="68" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#E65100">🛡️ Safety Layer</text>
+  <text x="245" y="87" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">✓ PII Detection</text>
+  <text x="245" y="101" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">✓ Toxicity Classifier</text>
+  <text x="245" y="115" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">✓ Jailbreak Detection</text>
+  <text x="245" y="129" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">✓ NSFW Filter</text>
+  <text x="245" y="143" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">✓ Hallucination Check</text>
+
+  <!-- Arrow to model -->
+  <line x1="348" y1="100" x2="368" y2="100" stroke="#555" stroke-width="2.5"/>
+  <polygon points="368,94 380,100 368,106" fill="#555"/>
+  <text x="364" y="91" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">safe</text>
+
+  <!-- Model -->
+  <rect x="384" y="65" width="80" height="70" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+  <text x="424" y="92" text-anchor="middle" font-family="Arial" font-size="22">🧠</text>
+  <text x="424" y="112" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#1B5E20">LLM</text>
+  <text x="424" y="127" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">inference</text>
+
+  <!-- Arrow up for blocked -->
+  <line x1="245" y1="45" x2="245" y2="25" stroke="#C62828" stroke-width="2.5" stroke-dasharray="4,3"/>
+  <polygon points="240,25 250,25 245,15" fill="#C62828"/>
+  <rect x="185" y="5" width="120" height="22" rx="5" fill="#FFCDD2" stroke="#C62828" stroke-width="1.5"/>
+  <text x="245" y="20" text-anchor="middle" font-family="Arial" font-size="10" fill="#C62828">🚫 Blocked &amp; Logged</text>
+
+  <!-- Arrow out -->
+  <line x1="467" y1="100" x2="487" y2="100" stroke="#555" stroke-width="2.5"/>
+  <polygon points="487,94 499,100 487,106" fill="#555"/>
+  <rect x="500" y="75" width="50" height="50" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+  <text x="525" y="100" text-anchor="middle" font-family="Arial" font-size="20">✅</text>
+  <text x="525" y="117" text-anchor="middle" font-family="Arial" font-size="9" fill="#1B5E20">Output</text>
+</svg>

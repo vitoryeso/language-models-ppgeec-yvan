@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <style>
+    .box { fill: #E8F0FE; stroke: #4A90D9; stroke-width: 2; rx: 8; }
+    .token { fill: #4A90D9; stroke: #2C5F8A; stroke-width: 1.5; rx: 4; }
+    .txt { font-family: monospace; font-size: 12px; fill: #333; text-anchor: middle; }
+    .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  <!-- Input text -->
+  <rect x="10" y="30" width="140" height="50" class="box"/>
+  <text x="80" y="60" class="txt">"The cat sat"</text>
+  <text x="80" y="20" class="txt" font-weight="bold">Raw Text</text>
+  <!-- Arrow -->
+  <line x1="155" y1="55" x2="185" y2="55" class="arrow"/>
+  <!-- Tokens -->
+  <rect x="190" y="20" width="130" height="70" fill="#F5F5F5" stroke="#CCC" stroke-width="1" rx="6"/>
+  <rect x="200" y="32" width="45" height="24" class="token"/>
+  <text x="222" y="49" class="txt" fill="white">The</text>
+  <rect x="252" y="32" width="55" height="24" class="token"/>
+  <text x="280" y="49" class="txt" fill="white">_cat</text>
+  <rect x="215" y="60" width="45" height="24" class="token"/>
+  <text x="237" y="77" class="txt" fill="white">_sat</text>
+  <text x="255" y="15" class="txt" font-weight="bold">Tokens</text>
+  <!-- Arrow -->
+  <line x1="325" y1="55" x2="355" y2="55" class="arrow"/>
+  <!-- Token IDs -->
+  <rect x="360" y="20" width="130" height="70" fill="#FFF3E0" stroke="#E8A838" stroke-width="2" rx="6"/>
+  <text x="425" y="45" class="txt" font-size="14">[464, 3857,</text>
+  <text x="425" y="65" class="txt" font-size="14"> 3290]</text>
+  <text x="425" y="15" class="txt" font-weight="bold">Token IDs</text>
+  <!-- Embeddings -->
+  <line x1="425" y1="95" x2="425" y2="120" class="arrow"/>
+  <rect x="340" y="125" width="170" height="55" fill="#E8F5E9" stroke="#6BB86B" stroke-width="2" rx="6"/>
+  <text x="425" y="148" class="txt" font-size="10">[0.23, -0.45, 0.78, ...]</text>
+  <text x="425" y="165" class="txt" font-size="10">[0.11, 0.92, -0.33, ...]</text>
+  <text x="425" y="120" class="txt" font-weight="bold">Embeddings</text>
+</svg>

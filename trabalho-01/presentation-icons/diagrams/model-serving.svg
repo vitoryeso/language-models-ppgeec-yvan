@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280" width="460" height="280">
+  <style>
+    .box { rx: 8; stroke-width: 2; }
+    .txt { font-family: monospace; font-size: 10px; fill: white; text-anchor: middle; }
+    .ltxt { font-family: monospace; font-size: 9px; fill: #555; text-anchor: middle; }
+    .arrow { stroke: #666; stroke-width: 1.5; fill: none; marker-end: url(#as); }
+  </style>
+  <defs>
+    <marker id="as" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+  <!-- Client -->
+  <rect x="20" y="100" width="70" height="50" class="box" fill="#78909C" stroke="#546E7A"/>
+  <text x="55" y="122" class="txt" font-weight="bold">Client</text>
+  <text x="55" y="137" class="txt" font-size="8">API Call</text>
+  <line x1="95" y1="125" x2="125" y2="125" class="arrow"/>
+  <!-- Load Balancer -->
+  <rect x="130" y="90" width="80" height="70" class="box" fill="#4A90D9" stroke="#2C5F8A"/>
+  <text x="170" y="118" class="txt" font-weight="bold">Load</text>
+  <text x="170" y="133" class="txt" font-weight="bold">Balancer</text>
+  <text x="170" y="148" class="txt" font-size="8">Gateway</text>
+  <!-- Arrows to GPU servers -->
+  <line x1="215" y1="110" x2="255" y2="55" class="arrow"/>
+  <line x1="215" y1="125" x2="255" y2="125" class="arrow"/>
+  <line x1="215" y1="140" x2="255" y2="200" class="arrow"/>
+  <!-- GPU Server 1 -->
+  <rect x="260" y="25" width="90" height="55" class="box" fill="#76B900" stroke="#5A8A00"/>
+  <text x="305" y="48" class="txt" font-weight="bold">GPU 0</text>
+  <text x="305" y="63" class="txt" font-size="8">Model Replica</text>
+  <!-- GPU Server 2 -->
+  <rect x="260" y="100" width="90" height="55" class="box" fill="#76B900" stroke="#5A8A00"/>
+  <text x="305" y="122" class="txt" font-weight="bold">GPU 1</text>
+  <text x="305" y="137" class="txt" font-size="8">Model Replica</text>
+  <!-- GPU Server 3 -->
+  <rect x="260" y="175" width="90" height="55" class="box" fill="#76B900" stroke="#5A8A00"/>
+  <text x="305" y="197" class="txt" font-weight="bold">GPU 2</text>
+  <text x="305" y="212" class="txt" font-size="8">Model Replica</text>
+  <!-- Observability -->
+  <rect x="370" y="40" width="80" height="40" class="box" fill="#E8A838" stroke="#B07A20"/>
+  <text x="410" y="58" class="txt" font-weight="bold">Metrics</text>
+  <text x="410" y="72" class="txt" font-size="8">Latency/QPS</text>
+  <line x1="355" y1="52" x2="370" y2="55" class="arrow"/>
+  <!-- Model Registry -->
+  <rect x="370" y="100" width="80" height="40" class="box" fill="#9C27B0" stroke="#6A1B9A"/>
+  <text x="410" y="118" class="txt" font-weight="bold">Registry</text>
+  <text x="410" y="132" class="txt" font-size="8">Versions</text>
+  <line x1="355" y1="127" x2="370" y2="120" class="arrow"/>
+  <!-- Cache -->
+  <rect x="370" y="170" width="80" height="40" class="box" fill="#D94A4A" stroke="#A02C2C"/>
+  <text x="410" y="188" class="txt" font-weight="bold">Cache</text>
+  <text x="410" y="202" class="txt" font-size="8">KV Cache</text>
+  <line x1="355" y1="195" x2="370" y2="192" class="arrow"/>
+</svg>

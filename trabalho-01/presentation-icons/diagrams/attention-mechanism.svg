@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350" width="350" height="350">
+  <style>
+    .box { rx: 6; stroke-width: 1.5; }
+    .txt { font-family: monospace; font-size: 10px; fill: #333; text-anchor: middle; }
+    .arrow { stroke: #666; stroke-width: 1.5; fill: none; marker-end: url(#at); }
+  </style>
+  <defs>
+    <marker id="at" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#666"/>
+    </marker>
+  </defs>
+  <text x="175" y="20" class="txt" font-size="13" font-weight="bold">Self-Attention</text>
+  <!-- Input -->
+  <rect x="130" y="300" width="90" height="35" class="box" fill="#E8F0FE" stroke="#4A90D9"/>
+  <text x="175" y="322" class="txt" fill="#2C5F8A" font-weight="bold">Input X</text>
+  <!-- Q, K, V -->
+  <line x1="145" y1="300" x2="60" y2="265" class="arrow"/>
+  <line x1="175" y1="300" x2="175" y2="265" class="arrow"/>
+  <line x1="205" y1="300" x2="290" y2="265" class="arrow"/>
+  <rect x="25" y="230" width="70" height="35" class="box" fill="#D94A4A" stroke="#A02C2C"/>
+  <text x="60" y="252" class="txt" fill="white" font-weight="bold">Q</text>
+  <rect x="140" y="230" width="70" height="35" class="box" fill="#6BB86B" stroke="#3D7A3D"/>
+  <text x="175" y="252" class="txt" fill="white" font-weight="bold">K</text>
+  <rect x="255" y="230" width="70" height="35" class="box" fill="#4A90D9" stroke="#2C5F8A"/>
+  <text x="290" y="252" class="txt" fill="white" font-weight="bold">V</text>
+  <!-- MatMul QK -->
+  <line x1="60" y1="230" x2="100" y2="190" class="arrow"/>
+  <line x1="175" y1="230" x2="135" y2="190" class="arrow"/>
+  <rect x="80" y="160" width="75" height="30" class="box" fill="#FFF3E0" stroke="#E8A838"/>
+  <text x="117" y="178" class="txt" font-size="9" fill="#B07A20">QK^T / √dk</text>
+  <!-- Softmax -->
+  <line x1="117" y1="160" x2="117" y2="135" class="arrow"/>
+  <rect x="80" y="105" width="75" height="30" class="box" fill="#F3E5F5" stroke="#9C27B0"/>
+  <text x="117" y="124" class="txt" font-size="9" fill="#6A1B9A">Softmax</text>
+  <!-- MatMul with V -->
+  <line x1="117" y1="105" x2="175" y2="80" class="arrow"/>
+  <line x1="290" y1="230" x2="210" y2="80" class="arrow"/>
+  <rect x="145" y="50" width="65" height="30" class="box" fill="#00897B" stroke="#005D4F"/>
+  <text x="177" y="70" class="txt" fill="white" font-weight="bold">Output</text>
+</svg>

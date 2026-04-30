@@ -1,0 +1,255 @@
+===== PAGE 1 =====
+PPGEEC2327
+Deep Dive
+Into LLM
+Lecture 2
+Ivanovitch Silva
+ March, 2026
+This image was generated using an AI model (Nano Banana 2)
+
+===== PAGE 2 =====
+
+===== PAGE 3 =====
+
+===== PAGE 4 =====
+https://llm-stats.com
+Last update: 26 march 2026
+Graduate-Level Google-Proof Q&A (GPQA). Are LLMs Becoming Commodities?
+
+===== PAGE 5 =====
+https://ieeexplore.ieee.org/abstract/document/4638468
+
+===== PAGE 6 =====
+Prompt:
+Estou revisando um artigo e gostaria de 
+propor uma nova legenda para a Figura 3. 
+
+===== PAGE 7 =====
+CNN-LSTM Architecture for Image Captioning
+
+===== PAGE 8 =====
+
+===== PAGE 9 =====
+https://www.youtube.com/watch?v=7xTGNNLPyMI&list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI
+
+===== PAGE 10 =====
+Assignment 1
+LLM Deep Dive (Reverse Classroom)
+
+===== PAGE 11 =====
+Overview
+In this assignment, you will study Large Language Models (LLMs) through a reverse classroom 
+approach.
+Instead of attending a lecture on the topic, you will:
+●
+Study a comprehensive Deep Dive lecture (by Andrej Karpathy)
+●
+Reconstruct the concepts in your own way
+●
+Teach them as if you were the instructor
+The goal is not to reproduce the content, but to demonstrate that you can understand, structure, 
+and communicate complex ideas independently.
+This assignment also includes a peer interaction component, designed to promote reﬂection and 
+intellectual exchange in a natural and unscripted way.
+
+===== PAGE 12 =====
+Learning Objectives
+By completing this assignment, you should be able to:
+●
+Explain the end-to-end pipeline of a modern LLM
+●
+Describe the role of tokenization, embeddings, and Transformers
+●
+Understand the training paradigm (next-token prediction)
+●
+Identify limitations and open challenges in LLMs
+●
+Communicate technical ideas clearly at a graduate level
+●
+Critically engage with another person’s explanation 
+
+===== PAGE 13 =====
+Part I - Your Lecture (Individual Work)
+You will create your own explanation of the Deep Dive content.
+Format
+●
+Platform: Loom (www.loom.com)
+●
+Maximum: 10 minutes per video
+●
+Expected: 3 videos (≈ 25–30 minutes total) 
+
+===== PAGE 14 =====
+Suggested Structure (ﬂexible, not rigid)
+You are encouraged, but not forced, to organize your videos around:
+1. The Big Picture
+Explain the overall pipeline:
+●
+Tokens → Embeddings → Transformer → Output
+●
+What the model is actually doing
+●
+Focus on clarity and conceptual flow.
+2. Technical Deep Dive
+Explain core technical mechanisms in more detail:
+●
+Attention mechanism (intuition + formal perspective)
+●
+Transformer blocks (self-attention, feed-forward layers)
+●
+Training process (objective, data, scaling)
+●
+Inference behavior 
+●
+Students are encouraged to include diagrams, equations, or 
+examples where appropriate
+3. Critical Reﬂection
+Provide a critical and analytical perspective:
+●
+What are the limitations of LLMs?
+●
+What aspects were unclear or under 
+explained in the source material?
+●
+What are common misconceptions?
+●
+What questions remain open?
+●
+This section should demonstrate 
+independent thinking, not just 
+reproduction of content.
+
+===== PAGE 15 =====
+Part II - Peer Interaction (organic, asynchronous)
+You will watch the videos produced by your partner (from the ﬁrst class activity).
+Your role is simple:
+●
+Engage with your colleague’s explanation in a thoughtful and honest way.
+
+===== PAGE 16 =====
+Part II - How to do it
+Use the comment feature in Loom.
+There is no rigid template, but your interaction should naturally include:
+●
+What you found clear
+●
+What you did not fully understand
+●
+What you think is missing
+●
+At least one meaningful question
+After that:
+●
+The author is expected to respond
+●
+A short back-and-forth may emerge
+Important Principles
+●
+This is not a checklist exercise
+●
+This is not scripted interaction
+●
+Do not coordinate responses in 
+advance
+●
+Do not treat this as a formality
+The goal is to create a genuine technical 
+exchange
+
+===== PAGE 17 =====
+Academic Integrity
+You may use AI tools to:
+●
+organize your ideas
+●
+improve clarity
+However:
+●
+The explanation must reﬂect your own understanding
+●
+You must be able to defend everything you present
+●
+Blind copying or passive generation is not acceptable
+
+===== PAGE 18 =====
+Grading Rubric
+A - Excelente
+●
+Demonstrates clear and solid understanding of LLM concepts
+●
+Explanation is well-structured and easy to follow
+●
+Shows depth (goes beyond surface-level description)
+●
+Includes critical thinking (questions, limitations, insights)
+●
+Peer interaction is genuine, thoughtful, and technically meaningful
+B - Good
+●
+Good understanding, with minor gaps
+●
+Explanation is mostly clear
+●
+Some depth, but not consistent
+●
+Some critical reﬂection, but limited
+●
+Peer interaction is relevant, but not very deep
+C — Satisfactory
+●
+Basic understanding of concepts
+●
+Explanation is somewhat 
+superﬁcial or uneven
+●
+Limited depth
+●
+Little critical thinking
+●
+Peer interaction exists, but is 
+generic or shallow
+
+===== PAGE 19 =====
+19/03 Week 01
+Overview & Introduction
+26/03 Week  02
+Fundamentals - Deep Dive to LLM 
+09/04 Week 03
+Fundamentals - Why attention
+16/04 Week 04
+Fundamentals -  Transformer
+23/04 Week 05
+Fundamentals - How to implement the 
+components
+30/04 Week 06
+Nano-Project
+07/04 Week 07
+Prompting for Effective LLM Reasoning 
+and Planning
+14/07 Week 08
+Agentic Workflow 
+21/05 Week 09
+Building Agents
+28/05 Week 10
+Multi-Agent System
+11/06 Week 11
+Project
+18/06 Week 12
+Project
+25/06 Week 13
+Project <meetup> 
+02/07 Week 14
+Project <presentation>
+09/07 Week 15
+Project <presentation>
+
+===== PAGE 20 =====
+Evaluation Criteria
+There will be no exams. Instead, students will complete weekly assignments
+[A]  Submitted all assignments & Fully met the requirements
+[B] Failed to submit at least 1 assignment & Partially met the requirements of at least 2 assignments
+[C] Failed to submit at least 2 assignments & Partially
+met the requirements of at least 3 assignments
+[D] Failed to submit at least 3
+assignments & Partially met the
+requirements of at least 4 assignments

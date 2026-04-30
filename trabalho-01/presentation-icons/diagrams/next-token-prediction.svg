@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" width="440" height="200">
+  <style>
+    .tok { rx: 4; stroke-width: 1.5; }
+    .txt { font-family: monospace; font-size: 11px; fill: #333; text-anchor: middle; }
+    .prob { font-family: monospace; font-size: 9px; fill: #666; text-anchor: middle; }
+  </style>
+  <!-- Input tokens -->
+  <rect x="20" y="70" width="55" height="35" class="tok" fill="#4A90D9" stroke="#2C5F8A"/>
+  <text x="47" y="92" class="txt" fill="white">The</text>
+  <rect x="85" y="70" width="55" height="35" class="tok" fill="#4A90D9" stroke="#2C5F8A"/>
+  <text x="112" y="92" class="txt" fill="white">cat</text>
+  <rect x="150" y="70" width="55" height="35" class="tok" fill="#4A90D9" stroke="#2C5F8A"/>
+  <text x="177" y="92" class="txt" fill="white">sat</text>
+  <rect x="215" y="70" width="55" height="35" class="tok" fill="#4A90D9" stroke="#2C5F8A"/>
+  <text x="242" y="92" class="txt" fill="white">on</text>
+  <rect x="280" y="70" width="55" height="35" class="tok" fill="#4A90D9" stroke="#2C5F8A"/>
+  <text x="307" y="92" class="txt" fill="white">the</text>
+  <!-- Predicted next token -->
+  <rect x="355" y="70" width="65" height="35" class="tok" fill="#6BB86B" stroke="#3D7A3D" stroke-dasharray="4,2"/>
+  <text x="387" y="92" class="txt" fill="white" font-weight="bold">???</text>
+  <!-- Probability distribution -->
+  <text x="387" y="25" class="txt" font-weight="bold" fill="#333">P(next token)</text>
+  <!-- Prob bars -->
+  <rect x="347" y="125" width="80" height="12" rx="2" fill="#E8F0FE" stroke="#CCC" stroke-width="0.5"/>
+  <rect x="347" y="125" width="64" height="12" rx="2" fill="#6BB86B"/>
+  <text x="440" y="135" class="prob">mat 0.80</text>
+  <rect x="347" y="142" width="80" height="12" rx="2" fill="#E8F0FE" stroke="#CCC" stroke-width="0.5"/>
+  <rect x="347" y="142" width="10" height="12" rx="2" fill="#E8A838"/>
+  <text x="440" y="152" class="prob">rug 0.12</text>
+  <rect x="347" y="159" width="80" height="12" rx="2" fill="#E8F0FE" stroke="#CCC" stroke-width="0.5"/>
+  <rect x="347" y="159" width="5" height="12" rx="2" fill="#D94A4A"/>
+  <text x="445" y="169" class="prob">floor 0.05</text>
+  <!-- Arrow -->
+  <text x="180" y="45" class="txt" font-size="13" fill="#4A90D9" font-weight="bold">Autoregressive Language Model</text>
+  <text x="180" y="135" class="txt" font-size="9" fill="#888">Context window → Softmax → Next token</text>
+</svg>

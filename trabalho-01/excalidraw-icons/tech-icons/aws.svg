@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="16" fill="#232F3E"/>
+  <!-- Cloud shape -->
+  <path d="M70 50 Q78 50 78 43 Q78 36 70 36 Q69 28 62 26 Q55 24 50 30 Q46 24 38 26 Q30 28 30 36 Q22 36 22 43 Q22 50 30 50 Z" fill="#FF9900"/>
+  <!-- Arrow -->
+  <polygon points="50,62 40,52 46,52 46,38 54,38 54,52 60,52" fill="white"/>
+  <text x="50" y="90" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#FF9900">AWS</text>
+</svg>

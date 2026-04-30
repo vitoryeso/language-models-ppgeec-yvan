@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="16" fill="#DC382D"/>
+  <!-- Redis cube stack -->
+  <!-- Bottom rhombus -->
+  <polygon points="50,72 76,60 50,48 24,60" fill="white" opacity="0.7"/>
+  <!-- Middle rhombus -->
+  <polygon points="50,58 76,46 50,34 24,46" fill="white" opacity="0.85"/>
+  <!-- Top rhombus -->
+  <polygon points="50,44 76,32 50,20 24,32" fill="white"/>
+  <text x="50" y="90" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="white">Redis</text>
+</svg>

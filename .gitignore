@@ -1,0 +1,23 @@
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Local credentials/secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Misc
+*.log

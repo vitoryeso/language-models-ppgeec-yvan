@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="420" height="200">
+  <style>
+    .box { rx: 8; stroke-width: 2; }
+    .txt { font-family: monospace; font-size: 10px; text-anchor: middle; }
+    .arrow { stroke: #666; stroke-width: 1.5; fill: none; marker-end: url(#ati); }
+  </style>
+  <defs>
+    <marker id="ati" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+  <text x="210" y="20" class="txt" font-size="13" font-weight="bold" fill="#333">Test-Time Inference</text>
+  <!-- Input -->
+  <rect x="20" y="50" width="80" height="45" class="box" fill="#4A90D9" stroke="#2C5F8A"/>
+  <text x="60" y="70" class="txt" fill="white" font-weight="bold">Prompt</text>
+  <text x="60" y="84" class="txt" fill="white" font-size="8">User Query</text>
+  <line x1="105" y1="72" x2="130" y2="72" class="arrow"/>
+  <!-- Prefill -->
+  <rect x="135" y="40" width="90" height="65" class="box" fill="#E8A838" stroke="#B07A20"/>
+  <text x="180" y="60" class="txt" fill="white" font-weight="bold">Prefill</text>
+  <text x="180" y="75" class="txt" fill="white" font-size="8">Process all</text>
+  <text x="180" y="88" class="txt" fill="white" font-size="8">input tokens</text>
+  <line x1="230" y1="72" x2="255" y2="72" class="arrow"/>
+  <!-- Decode -->
+  <rect x="260" y="40" width="90" height="65" class="box" fill="#6BB86B" stroke="#3D7A3D"/>
+  <text x="305" y="60" class="txt" fill="white" font-weight="bold">Decode</text>
+  <text x="305" y="75" class="txt" fill="white" font-size="8">Token by</text>
+  <text x="305" y="88" class="txt" fill="white" font-size="8">token gen</text>
+  <!-- TTFT arrow -->
+  <line x1="135" y1="115" x2="260" y2="115" stroke="#D94A4A" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="197" y="130" class="txt" fill="#D94A4A" font-weight="bold">TTFT</text>
+  <text x="197" y="143" class="txt" fill="#888" font-size="8">Time to First Token</text>
+  <!-- Output -->
+  <line x1="355" y1="72" x2="375" y2="72" class="arrow"/>
+  <rect x="380" y="50" width="35" height="45" class="box" fill="#9C27B0" stroke="#6A1B9A"/>
+  <text x="397" y="77" class="txt" fill="white" font-size="20">📝</text>
+  <!-- KV Cache -->
+  <rect x="260" y="155" width="90" height="30" rx="4" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1"/>
+  <text x="305" y="175" class="txt" fill="#6A1B9A" font-size="9">KV Cache</text>
+  <line x1="305" y1="105" x2="305" y2="155" class="arrow" stroke-dasharray="3,2"/>
+</svg>

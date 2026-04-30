@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 200" width="580" height="200">
+  <rect width="580" height="200" rx="12" fill="#F8F9FA" stroke="#DEE2E6" stroke-width="2"/>
+  <text x="290" y="28" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#212529">Extract → Transform → Load (ETL)</text>
+
+  <!-- Extract -->
+  <rect x="20" y="50" width="140" height="100" rx="10" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  <text x="90" y="75" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#1565C0">EXTRACT</text>
+  <text x="90" y="95" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">📄 Web Crawlers</text>
+  <text x="90" y="111" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">🗄️ Databases</text>
+  <text x="90" y="127" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">📡 APIs / Streams</text>
+  <text x="90" y="143" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">📁 File Systems</text>
+
+  <!-- Arrow 1 -->
+  <line x1="163" y1="100" x2="193" y2="100" stroke="#555" stroke-width="3"/>
+  <polygon points="193,94 205,100 193,106" fill="#555"/>
+  <text x="184" y="92" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">raw data</text>
+
+  <!-- Transform -->
+  <rect x="210" y="50" width="160" height="100" rx="10" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+  <text x="290" y="75" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#BF360C">TRANSFORM</text>
+  <text x="290" y="95" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">🧹 Clean &amp; Deduplicate</text>
+  <text x="290" y="111" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">🔤 Normalize Text</text>
+  <text x="290" y="127" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">🔍 Quality Filter</text>
+  <text x="290" y="143" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">📊 Feature Engineer</text>
+
+  <!-- Arrow 2 -->
+  <line x1="373" y1="100" x2="403" y2="100" stroke="#555" stroke-width="3"/>
+  <polygon points="403,94 415,100 403,106" fill="#555"/>
+  <text x="394" y="92" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">clean data</text>
+
+  <!-- Load -->
+  <rect x="420" y="50" width="140" height="100" rx="10" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+  <text x="490" y="75" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#1B5E20">LOAD</text>
+  <text x="490" y="95" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">☁️ Data Warehouse</text>
+  <text x="490" y="111" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">🏪 Object Storage</text>
+  <text x="490" y="127" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">📦 Feature Store</text>
+  <text x="490" y="143" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">🗂️ Data Lake</text>
+
+  <!-- Bottom note -->
+  <text x="290" y="175" text-anchor="middle" font-family="Arial" font-size="10" fill="#888" font-style="italic">Orchestrated by: Apache Airflow / dbt / Spark</text>
+</svg>

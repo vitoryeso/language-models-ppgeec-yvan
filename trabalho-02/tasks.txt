@@ -1,0 +1,50 @@
+## Edgequake — patch is_model_provider_mismatch (compat-guard)
+
+### Problema
+`edgequake/crates/edgequake-api/src/safety_limits.rs:is_model_provider_mismatch`
+trata qualquer modelo com `/`, `:`, ou prefixo `qwen|llama|mistral|gemma|phi|deepseek|glm|minicpm`
+como mismatch quando o provider é `openai|anthropic|gemini|xai|minimax`.
+
+Resultado: edgequake AUTO-CORRIGE pra "gpt-4.1-nano" (default da OpenAI), mesmo quando
+o user aponta `OPENAI_BASE_URL` pra um vLLM/LM Studio servindo Qwen3, Llama, etc.
+
+Workaround atual (sem patch): vLLM rodado com `--served-model-name gpt-4.1-nano`
+pra escapar do guard. Funciona mas é alias enganoso e o cost.rs reporta pricing
+fake da OpenAI no UI.
+
+### Correção sugerida
+Em `is_model_provider_mismatch`, quando `provider == "openai"`, checar se
+`OPENAI_BASE_URL` está setado e aponta pra host **diferente** de `api.openai.com`.
+Se sim, **desligar** o guard (é OpenAI-compat, não OpenAI real).
+
+```rust
+"openai" | "anthropic" | "gemini" | "xai" | "minimax" => {
+    // Bypass guard for OpenAI-compatible custom endpoints (vLLM, LM Studio, etc.)
+    if provider == "openai" {
+        if let Ok(base_url) = std::env::var("OPENAI_BASE_URL") {
+            if !base_url.is_empty() && !base_url.contains("api.openai.com") {
+                return false;
+            }
+        }
+    }
+    is_local_style_model || model.contains('/')
+}
+```
+
+Tests: adicionar caso em `tests/...` que com `OPENAI_BASE_URL=http://vllm:8000/v1`
+e modelo `Qwen/Qwen3-14B`, `is_model_provider_mismatch("openai", "Qwen/Qwen3-14B")` retorna `false`.
+
+### Build local
+```
+cd edgequake/edgequake
+docker build -f docker/Dockerfile -t edgequake-local:patched ..
+```
+
+Depois trocar imagem em `~/edgequake/docker-compose.yml` (turing) de
+`ghcr.io/raphaelmansuy/edgequake:0.10.12` pra `edgequake-local:patched`,
+restart, e remover o alias `--served-model-name gpt-4.1-nano` do vLLM
+(usar nome real `Qwen/Qwen3-14B`).
+
+### Quando fazer
+Não-bloqueante. Pipeline funciona com workaround. Patch resolve a confusão
+de cost reporting + permite usar nomes nativos dos modelos no UI.

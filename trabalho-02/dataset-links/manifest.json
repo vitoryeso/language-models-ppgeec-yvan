@@ -1,0 +1,445 @@
+{
+  "description": "54 papers + lib docs sobre fine-tuning de LLMs. Frontmatter only — fetch full content via source_url.",
+  "files": [
+    {
+      "path": "01-sft/01-instruction-tuning-survey.md",
+      "title": "Instruction Tuning for Large Language Models: A Survey",
+      "source_url": "https://arxiv.org/abs/2308.10792",
+      "source_type": "paper",
+      "topics": "[sft, instruction-tuning, survey]",
+      "date": "2023-08-21"
+    },
+    {
+      "path": "01-sft/02-peft-comprehensive-survey-2024.md",
+      "title": "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey",
+      "source_url": "https://arxiv.org/abs/2403.14608",
+      "source_type": "paper",
+      "topics": "[sft, peft, survey]",
+      "date": "2024-03-21"
+    },
+    {
+      "path": "01-sft/03-trl-sft-trainer-docs.md",
+      "title": "TRL SFTTrainer — Supervised Fine-Tuning Documentation",
+      "source_url": "https://huggingface.co/docs/trl/en/sft_trainer",
+      "source_type": "library_docs",
+      "topics": "[sft, instruction-tuning, library]",
+      "date": "2026-04-29"
+    },
+    {
+      "path": "01-sft/04-trl-overview-docs.md",
+      "title": "TRL — Transformers Reinforcement Learning: Library Overview",
+      "source_url": "https://huggingface.co/docs/trl/en/index",
+      "source_type": "library_docs",
+      "topics": "[sft, rlhf, dpo, grpo, library]",
+      "date": "2026-04-29"
+    },
+    {
+      "path": "01-sft/05-deita-data-selection.md",
+      "title": "What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning",
+      "source_url": "https://arxiv.org/abs/2312.15685",
+      "source_type": "paper",
+      "topics": "[sft, instruction-tuning, data-selection]",
+      "date": "2023-12-25"
+    },
+    {
+      "path": "02-lora/01-lora-original.md",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "source_url": "https://arxiv.org/abs/2106.09685",
+      "source_type": "paper",
+      "topics": "[lora, peft]",
+      "date": "2021-06-17"
+    },
+    {
+      "path": "02-lora/02-qlora.md",
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+      "source_url": "https://arxiv.org/abs/2305.14314",
+      "source_type": "paper",
+      "topics": "[lora, quantization, peft]",
+      "date": "2023-05-23"
+    },
+    {
+      "path": "02-lora/03-dora.md",
+      "title": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+      "source_url": "https://arxiv.org/abs/2402.09353",
+      "source_type": "paper",
+      "topics": "[lora, peft]",
+      "date": "2024-02-14"
+    },
+    {
+      "path": "02-lora/04-vera.md",
+      "title": "VeRA: Vector-based Random Matrix Adaptation",
+      "source_url": "https://arxiv.org/abs/2310.11454",
+      "source_type": "paper",
+      "topics": "[lora, peft]",
+      "date": "2023-10-17"
+    },
+    {
+      "path": "02-lora/05-adalora.md",
+      "title": "AdaLoRA: Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning",
+      "source_url": "https://arxiv.org/abs/2303.10512",
+      "source_type": "paper",
+      "topics": "[lora, peft]",
+      "date": "2023-03-18"
+    },
+    {
+      "path": "02-lora/06-lora-plus.md",
+      "title": "LoRA+: Efficient Low Rank Adaptation of Large Models",
+      "source_url": "https://arxiv.org/abs/2402.12354",
+      "source_type": "paper",
+      "topics": "[lora, peft]",
+      "date": "2024-02-19"
+    },
+    {
+      "path": "02-lora/07-hf-peft-lora-docs.md",
+      "title": "LoRA Developer Guide — HuggingFace PEFT Documentation",
+      "source_url": "https://huggingface.co/docs/peft/main/en/conceptual_guides/lora",
+      "source_type": "library_docs",
+      "topics": "[lora, peft, library]",
+      "date": "2026-04-29"
+    },
+    {
+      "path": "02-lora/08-lora-learns-less-forgets-less.md",
+      "title": "LoRA Learns Less and Forgets Less",
+      "source_url": "https://arxiv.org/abs/2405.09673",
+      "source_type": "paper",
+      "topics": "[lora, peft, continual]",
+      "date": "2024-05-15"
+    },
+    {
+      "path": "02-lora/09-lora-survey-2024.md",
+      "title": "A Survey on LoRA of Large Language Models",
+      "source_url": "https://arxiv.org/abs/2407.11046",
+      "source_type": "paper",
+      "topics": "[lora, peft, survey]",
+      "date": "2024-07-08"
+    },
+    {
+      "path": "03-adapters-prompts/01-prefix-tuning.md",
+      "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+      "source_url": "https://arxiv.org/abs/2101.00190",
+      "source_type": "paper",
+      "topics": "[prefix-tuning, peft, adapters]",
+      "date": "2021-01-01"
+    },
+    {
+      "path": "03-adapters-prompts/02-p-tuning-v2.md",
+      "title": "P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks",
+      "source_url": "https://arxiv.org/abs/2110.07602",
+      "source_type": "paper",
+      "topics": "[prefix-tuning, prompt-tuning, peft]",
+      "date": "2021-10-14"
+    },
+    {
+      "path": "03-adapters-prompts/03-ia3-few-shot.md",
+      "title": "Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning",
+      "source_url": "https://arxiv.org/abs/2205.05638",
+      "source_type": "paper",
+      "topics": "[ia3, peft, adapters]",
+      "date": "2022-05-11"
+    },
+    {
+      "path": "03-adapters-prompts/04-adapters-houlsby-2019.md",
+      "title": "Parameter-Efficient Transfer Learning for NLP",
+      "source_url": "https://arxiv.org/abs/1902.00751",
+      "source_type": "paper",
+      "topics": "[adapters, peft]",
+      "date": "2019-02-02"
+    },
+    {
+      "path": "03-adapters-prompts/05-peft-survey-methodologies-2024.md",
+      "title": "Parameter-Efficient Fine-Tuning in Large Models: A Survey of Methodologies",
+      "source_url": "https://arxiv.org/abs/2410.19878",
+      "source_type": "paper",
+      "topics": "[peft, adapters, survey]",
+      "date": "2024-10-24"
+    },
+    {
+      "path": "03-adapters-prompts/06-llama-pro-block-expansion.md",
+      "title": "LLaMA Pro: Progressive LLaMA with Block Expansion",
+      "source_url": "https://arxiv.org/abs/2401.02415",
+      "source_type": "paper",
+      "topics": "[sft, continual, domain-specific, adapters]",
+      "date": "2024-01-04"
+    },
+    {
+      "path": "04-rlhf-dpo/01-dpo-original.md",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "source_url": "https://arxiv.org/abs/2305.18290",
+      "source_type": "paper",
+      "topics": "[dpo, rlhf, preference-optimization]",
+      "date": "2023-05-29"
+    },
+    {
+      "path": "04-rlhf-dpo/02-kto.md",
+      "title": "KTO: Model Alignment as Prospect Theoretic Optimization",
+      "source_url": "https://arxiv.org/abs/2402.01306",
+      "source_type": "paper",
+      "topics": "[dpo, preference-optimization, rlhf]",
+      "date": "2024-02-02"
+    },
+    {
+      "path": "04-rlhf-dpo/03-simpo.md",
+      "title": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "source_url": "https://arxiv.org/abs/2405.14734",
+      "source_type": "paper",
+      "topics": "[dpo, preference-optimization, rlhf]",
+      "date": "2024-05-23"
+    },
+    {
+      "path": "04-rlhf-dpo/04-orpo.md",
+      "title": "ORPO: Monolithic Preference Optimization without Reference Model",
+      "source_url": "https://arxiv.org/abs/2403.07691",
+      "source_type": "paper",
+      "topics": "[dpo, preference-optimization, rlhf, sft]",
+      "date": "2024-03-12"
+    },
+    {
+      "path": "04-rlhf-dpo/05-dpo-survey-2024.md",
+      "title": "A Comprehensive Survey of Direct Preference Optimization: Datasets, Theories, Variants, and Applications",
+      "source_url": "https://arxiv.org/abs/2410.15595",
+      "source_type": "paper",
+      "topics": "[dpo, preference-optimization, survey, rlhf]",
+      "date": "2024-10-21"
+    },
+    {
+      "path": "04-rlhf-dpo/06-trl-dpo-trainer-docs.md",
+      "title": "DPO Trainer — HuggingFace TRL Documentation",
+      "source_url": "https://huggingface.co/docs/trl/en/dpo_trainer",
+      "source_type": "library_docs",
+      "topics": "[dpo, preference-optimization, library]",
+      "date": "2026-04-29"
+    },
+    {
+      "path": "04-rlhf-dpo/07-llama2-rlhf.md",
+      "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+      "source_url": "https://arxiv.org/abs/2307.09288",
+      "source_type": "paper",
+      "topics": "[rlhf, sft, preference-optimization]",
+      "date": "2023-07-18"
+    },
+    {
+      "path": "05-rl-reasoning/01-deepseek-r1.md",
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "source_url": "https://arxiv.org/abs/2501.12948",
+      "source_type": "paper",
+      "topics": "[rl-reasoning, grpo, rlvr]",
+      "date": "2025-01-22"
+    },
+    {
+      "path": "05-rl-reasoning/02-deepseekmath-grpo.md",
+      "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+      "source_url": "https://arxiv.org/abs/2402.03300",
+      "source_type": "paper",
+      "topics": "[grpo, rl-reasoning, math]",
+      "date": "2024-02-05"
+    },
+    {
+      "path": "05-rl-reasoning/03-tulu3.md",
+      "title": "Tulu 3: Pushing Frontiers in Open Language Model Post-Training",
+      "source_url": "https://arxiv.org/abs/2411.15124",
+      "source_type": "paper",
+      "topics": "[rlvr, sft, dpo, rl-reasoning]",
+      "date": "2024-11-22"
+    },
+    {
+      "path": "05-rl-reasoning/04-trl-grpo-trainer-docs.md",
+      "title": "GRPO Trainer — HuggingFace TRL Documentation",
+      "source_url": "https://huggingface.co/docs/trl/en/grpo_trainer",
+      "source_type": "library_docs",
+      "topics": "[grpo, rl-reasoning, library]",
+      "date": "2026-04-29"
+    },
+    {
+      "path": "05-rl-reasoning/05-open-r1-blog.md",
+      "title": "Open-R1: A Fully Open Reproduction of DeepSeek-R1",
+      "source_url": "https://huggingface.co/blog/open-r1",
+      "source_type": "blog",
+      "topics": "[rl-reasoning, grpo, distillation, open-source]",
+      "date": "2025-01-28"
+    },
+    {
+      "path": "06-quantization/01-qlora-quantization.md",
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs (Quantization Perspective)",
+      "source_url": "https://arxiv.org/abs/2305.14314",
+      "source_type": "paper",
+      "topics": "[quantization, lora, qlora]",
+      "date": "2023-05-23"
+    },
+    {
+      "path": "06-quantization/02-efficientqat.md",
+      "title": "EfficientQAT: Efficient Quantization-Aware Training for Large Language Models",
+      "source_url": "https://arxiv.org/abs/2407.11062",
+      "source_type": "paper",
+      "topics": "[quantization, quantization-aware-training]",
+      "date": "2024-07-10"
+    },
+    {
+      "path": "06-quantization/03-fp8-lm-training.md",
+      "title": "FP8-LM: Training FP8 Large Language Models",
+      "source_url": "https://arxiv.org/abs/2310.18313",
+      "source_type": "paper",
+      "topics": "[quantization, fp8, training-efficiency]",
+      "date": "2023-10-27"
+    },
+    {
+      "path": "06-quantization/04-bitsandbytes-docs.md",
+      "title": "bitsandbytes: 8-bit and 4-bit Quantization for Fine-tuning LLMs",
+      "source_url": "https://huggingface.co/docs/bitsandbytes/main/en/index",
+      "source_type": "library_docs",
+      "topics": "[quantization, qlora, library]",
+      "date": "2026-04-29"
+    },
+    {
+      "path": "07-long-context/01-yarn.md",
+      "title": "YaRN: Efficient Context Window Extension of Large Language Models",
+      "source_url": "https://arxiv.org/abs/2309.00071",
+      "source_type": "paper",
+      "topics": "[long-context, position-interpolation, yarn]",
+      "date": "2023-08-31"
+    },
+    {
+      "path": "07-long-context/02-longrope.md",
+      "title": "LongRoPE: Extending LLM Context Window Beyond 2 Million Tokens",
+      "source_url": "https://arxiv.org/abs/2402.13753",
+      "source_type": "paper",
+      "topics": "[long-context, position-interpolation]",
+      "date": "2024-02-21"
+    },
+    {
+      "path": "07-long-context/03-longlora.md",
+      "title": "LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models",
+      "source_url": "https://arxiv.org/abs/2309.12307",
+      "source_type": "paper",
+      "topics": "[long-context, lora, peft]",
+      "date": "2023-09-21"
+    },
+    {
+      "path": "07-long-context/04-position-interpolation.md",
+      "title": "Extending Context Window of Large Language Models via Positional Interpolation",
+      "source_url": "https://arxiv.org/abs/2306.15595",
+      "source_type": "paper",
+      "topics": "[long-context, position-interpolation]",
+      "date": "2023-06-27"
+    },
+    {
+      "path": "07-long-context/05-long-context-fine-tuning-medical.md",
+      "title": "Extending Context for Long-Form Understanding in Large Language Models",
+      "source_url": "https://arxiv.org/abs/2309.00071",
+      "source_type": "paper",
+      "topics": "[long-context, domain-specific, fine-tuning]",
+      "date": "2024-07-16"
+    },
+    {
+      "path": "08-domain-specific/01-biomistral-medical.md",
+      "title": "BioMistral: A Collection of Open-Source Pretrained Large Language Models for Medical Domains",
+      "source_url": "https://arxiv.org/abs/2402.10373",
+      "source_type": "paper",
+      "topics": "[domain-specific, medical, fine-tuning]",
+      "date": "2024-02-15"
+    },
+    {
+      "path": "08-domain-specific/03-multilingual-instruction-tuning.md",
+      "title": "Multilingual Instruction Tuning With Just a Pinch of Multilinguality",
+      "source_url": "https://arxiv.org/abs/2401.01854",
+      "source_type": "paper",
+      "topics": "[domain-specific, multilingual, instruction-tuning, sft]",
+      "date": "2024-01-03"
+    },
+    {
+      "path": "08-domain-specific/04-lawinstruct-legal.md",
+      "title": "LawInstruct: A Resource for Studying Language Model Adaptation to the Legal Domain",
+      "source_url": "https://arxiv.org/abs/2404.02127",
+      "source_type": "paper",
+      "topics": "[domain-specific, legal, instruction-tuning, sft]",
+      "date": "2024-04-02"
+    },
+    {
+      "path": "08-domain-specific/05-medical-ft-long-context.md",
+      "title": "Fine-Tuning Medical Language Models for Enhanced Long-Contextual Understanding and Domain Expertise",
+      "source_url": "https://arxiv.org/abs/2407.11536",
+      "source_type": "paper",
+      "topics": "[domain-specific, medical, long-context, fine-tuning]",
+      "date": "2024-07-16"
+    },
+    {
+      "path": "09-distillation/01-minillm.md",
+      "title": "MiniLLM: On-Policy Distillation of Large Language Models",
+      "source_url": "https://arxiv.org/abs/2306.08543",
+      "source_type": "paper",
+      "topics": "[distillation, on-policy, knowledge-distillation]",
+      "date": "2023-06-14"
+    },
+    {
+      "path": "09-distillation/02-gkd-on-policy.md",
+      "title": "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes",
+      "source_url": "https://arxiv.org/abs/2306.13649",
+      "source_type": "paper",
+      "topics": "[distillation, on-policy, knowledge-distillation]",
+      "date": "2023-06-23"
+    },
+    {
+      "path": "09-distillation/03-kd-survey-llm-2024.md",
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "source_url": "https://arxiv.org/abs/2402.13116",
+      "source_type": "paper",
+      "topics": "[distillation, survey, knowledge-distillation]",
+      "date": "2024-02-20"
+    },
+    {
+      "path": "09-distillation/04-on-policy-distillation-survey-2026.md",
+      "title": "A Survey of On-Policy Distillation for Large Language Models",
+      "source_url": "https://arxiv.org/abs/2604.00626",
+      "source_type": "paper",
+      "topics": "[distillation, on-policy, survey]",
+      "date": "2026-04-01"
+    },
+    {
+      "path": "09-distillation/05-kd-survey-methods-eval-2024.md",
+      "title": "Survey on Knowledge Distillation for Large Language Models: Methods, Evaluation, and Application",
+      "source_url": "https://arxiv.org/abs/2407.01885",
+      "source_type": "paper",
+      "topics": "[distillation, survey, knowledge-distillation]",
+      "date": "2024-07-02"
+    },
+    {
+      "path": "10-continual/01-continual-learning-survey-llm-2024.md",
+      "title": "Continual Learning of Large Language Models: A Comprehensive Survey",
+      "source_url": "https://arxiv.org/abs/2404.16789",
+      "source_type": "paper",
+      "topics": "[continual, catastrophic-forgetting, survey]",
+      "date": "2024-04-25"
+    },
+    {
+      "path": "10-continual/02-catastrophic-forgetting-peft.md",
+      "title": "Analyzing and Reducing Catastrophic Forgetting in Parameter Efficient Tuning",
+      "source_url": "https://arxiv.org/abs/2402.18865",
+      "source_type": "paper",
+      "topics": "[continual, catastrophic-forgetting, lora, peft]",
+      "date": "2024-02-29"
+    },
+    {
+      "path": "10-continual/03-curlora.md",
+      "title": "CURLoRA: Stable LLM Continual Fine-Tuning and Catastrophic Forgetting Mitigation",
+      "source_url": "https://arxiv.org/abs/2408.14572",
+      "source_type": "paper",
+      "topics": "[continual, lora, catastrophic-forgetting]",
+      "date": "2024-08-26"
+    },
+    {
+      "path": "10-continual/04-model-merging-continual.md",
+      "title": "Model Merging for Continual Learning in LLMs: TIES, DARE, and Task Arithmetic",
+      "source_url": "https://arxiv.org/abs/2511.21437",
+      "source_type": "paper",
+      "topics": "[continual, model-merging, lora]",
+      "date": "2025-11-01"
+    },
+    {
+      "path": "slides.md",
+      "title": "",
+      "source_url": "",
+      "source_type": "",
+      "topics": "",
+      "date": ""
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+Suggested Structure (flexible, not rigid)
+(Lecture2_PPgEEC.pdf — page 14)
+
+You are encouraged, but not forced, to organize your videos around:
+
+1. The Big Picture
+   Explain the overall pipeline:
+   - Tokens → Embeddings → Transformer → Output
+   - What the model is actually doing
+   - Focus on clarity and conceptual flow.
+
+2. Technical Deep Dive
+   Explain core technical mechanisms in more detail:
+   - Attention mechanism (intuition + formal perspective)
+   - Transformer blocks (self-attention, feed-forward layers)
+   - Training process (objective, data, scaling)
+   - Inference behavior
+   - Students are encouraged to include diagrams, equations, or
+     examples where appropriate.
+
+3. Critical Reflection
+   Provide a critical and analytical perspective:
+   - What are the limitations of LLMs?
+   - What aspects were unclear or under-explained in the source material?
+   - What are common misconceptions?
+   - What questions remain open?
+   - This section should demonstrate independent thinking,
+     not just reproduction of content.
